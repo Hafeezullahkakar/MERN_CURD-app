@@ -1,38 +1,90 @@
-.App {
+.App{
+  box-sizing: border-box;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0;
+  padding: 0;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App h1{
+  text-shadow:  0 0 15px rgb(8, 8, 8);;
+}
+.box{
+  box-sizing: border-box;
+  background-color: rgb(185, 38, 38);
+  width:50%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 10px 5px rgb(252, 250, 250);
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 19px;
+  }
+.fields input{
+  box-sizing: border-box;
+  border-radius: 10px;
+  outline: none;
+  width: 90%;
+  height: 35px;
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+  box-shadow: 0 0 5px 3px rgb(17, 17, 17);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fields button{
+  box-shadow: 0 0 2px rgb(17, 17, 17);
+  width: 90%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  height: 35px;
+  border-radius: 8px; 
+}
+.Items{
+  margin-top: 20px;
+  width: 90%;
+  background-color: rgba(8, 8, 8, 0.705);
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  color: white;  
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px 2px rgb(252, 251, 251);
+  border-radius:  10px;
+}
+.Items .item{
+  color: white;
+  box-shadow: 0 0 15px 6px rgb(255, 255, 255);
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: rgb(238, 32, 211);
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.item button{
+  cursor:pointer;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-weight: bold;
+  
+}
+ button:hover{
+transform:scale(1.09);
 }
